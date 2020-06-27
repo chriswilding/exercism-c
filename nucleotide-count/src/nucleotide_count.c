@@ -5,7 +5,7 @@
 #include <string.h>
 #include <stdlib.h>
 
-int width(int nucleotide)
+static int width(int nucleotide)
 {
   return floor(log10(nucleotide + 1)) + 4;
 }
