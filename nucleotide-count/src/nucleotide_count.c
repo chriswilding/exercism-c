@@ -32,16 +32,16 @@ char *count(const char *dna_strand)
     switch (ch)
     {
     case 'A':
-      a += 1;
+      a++;
       break;
     case 'C':
-      c += 1;
+      c++;
       break;
     case 'G':
-      g += 1;
+      g++;
       break;
     case 'T':
-      t += 1;
+      t++;
       break;
     default:
       return strdup("");
