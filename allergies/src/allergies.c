@@ -9,7 +9,7 @@ allergen_list_t get_allergens(unsigned int score)
 {
   allergen_list_t allergen_list = {0};
 
-  for (allergen_t allergen = 0; allergen < ALLERGEN_COUNT; allergen++)
+  for (allergen_t allergen = ALLERGEN_EGGS; allergen < ALLERGEN_COUNT; allergen++)
   {
     if (is_allergic_to(allergen, score))
     {
