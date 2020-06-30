@@ -9,12 +9,12 @@ allergen_list_t get_allergens(unsigned int score)
 {
   allergen_list_t allergen_list = {0};
 
-  for (int i = 0; i < ALLERGEN_COUNT; i++)
+  for (allergen_t allergen = 0; allergen < ALLERGEN_COUNT; allergen++)
   {
-    if (is_allergic_to(i, score))
+    if (is_allergic_to(allergen, score))
     {
       allergen_list.count++;
-      allergen_list.allergens[i] = true;
+      allergen_list.allergens[allergen] = true;
     }
   }
 
