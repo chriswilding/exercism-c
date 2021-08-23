@@ -5,6 +5,5 @@
 
 void two_fer(char *buffer, const char *name)
 {
-    const char *nameOrYou = name == NULL ? "you" : name;
-    sprintf(buffer, "One for %s, one for me.", nameOrYou);
+    sprintf(buffer, "One for %s, one for me.", name ? name : "you");
 }
